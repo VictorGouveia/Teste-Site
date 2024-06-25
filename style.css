@@ -689,7 +689,7 @@ main{
             align-items: center;
         }
         .fotonotelefoneminha img{
-            width: 300px;
+            width: 280px;
             margin-left: 26%;
             filter: drop-shadow(2px 1px 1px black);
         }
