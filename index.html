@@ -1,262 +1,276 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natália Tavares</title>
-    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- FIM GOOGLE FONTES -->
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- FIM BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="style.css">
+
+    <script src="menu.js" defer></script>
+
+    <title>Agência BRN</title>
 </head>
 <body>
     
     <header>
-        <nav class="navigation">
-            <div class="logo"><img src="logoofc_semf.png" alt="logo"></div><!--logo-->
-            <div class="nome"><h5>Natália Tavares</h5>
-                <p>Psicologa - CRP: 05/67877</p>
-            </div><!--nome-->
-           
-        </nav>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="logoofc_semf.png" alt="Logo da Agência BRN">
+                </a>
+            </div><!--logo-->
+
+            <nav class="menu-desktop">
+                <ul>
+                  <!--  <li><a href="#">Início</a></li>-->
+                    <li><a href="#qse">Quem sou Eu?</a></li>
+                    <li><a href="#cpa">Como Posso Ajudar?</a></li>
+                    <li><a href="#">Agendar Sessão</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="https://api.whatsapp.com/send?phone=5521976093091&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20sess%C3%A3o"></a>
+                    <button>Contato</button>
+                </a>
+            </div><!--btn-contato-->
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                    <!--    <li><a href="#">Início</a></li>-->
+                        <li><a href="#qse">Quem sou eu?</a></li>
+                        <li><a href="#">Como posso ajudar?</a></li>
+                        <li><a href="#">Agendar Sessão</a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=5521976093091&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20sess%C3%A3o"></a>">Contato</a></li>
+                    </ul>
+                </nav>
+
+            </div><!--menu-mobile-->
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div><!--interface-->
     </header>
 
-    <hr class="linha">
-
-
-    <div class="cabecalho">
-        <div class="quemsoueu">
-            <h6><a href="#qse">Quem sou Eu?</a></h6>
-        </div><!--quemsoueu-->
-        <div class="comopossoajudar">
-            <h6><a href="#cpa">Como posso Ajudar?</a></h6>
-        </div><!--comopossoajudar-->
-        <div class="agendar">
-            <h6><a href="#agd">Agendar Sessão</a></h6>
-        </div><!--agendar sessão-->
-    </div><!--cabecalho-->
-
-
-
     <main>
-        <div class="mainquemsoueu" id="qse">
-            <h1>Quem sou eu?</h1>
-            <h4>
-                Meu nome é Natália Tavares, sou psicóloga clínica e também tenho experiência na psicologia hospitalar. <br>
-Me formei em psicologia pela Universidade Veiga de Almeida, na qual tomei conhecimento da existência de um infinito de abordagens psicológicas possíveis de serem usadas clinicamente. Logo me deparei com a Análise Transacional, abordagem pela qual me apaixonei e sob a qual até hoje debruço meus estudos <br>
-Durante a faculdade fiz muitos estágios, participei de projetos sociais e em saúde mental. Participei de alguns eventos sobre psicologia, e pude me aperfeiçoando, tendo cada vez mais contato com a saúde mental, que é realmente o que me encanta, ter contato com as pessoas. <br>
-Estou aqui para oferecer acolhimento a quem me procura e, na garantia de um ambiente seguro, direcioná-lo (a) na busca do entendimento de si e de seus mecanismos de defesa, a fim de que consiga se tornar protagonista de sua própria vida. <br>
-Vamos juntos descobrir formas mais leves de viver a vida e lidar com as emoções?
-            </h4>
-            <h4 class="fraseum">
-                Ajudando a Desenvolver inteligência emocional.
-            </h4>
-        </div><!--mainquemsoueu-->
-        <div class="carousel" id="carousel">
-            <div class="slides">
-              <div class="slide"><img src="IMG_8827.JPG" alt="Imagem 1"></div>
-              <div class="slide"><img src="IMG_8830.JPG" alt="Imagem 2"></div>
-              <div class="slide"><img src="IMG_8836.JPG" alt="Imagem 3"></div>
-              <!-- Adicione mais slides conforme necessário -->
-            </div><!--slides-->
-          </div><!--carousel-->
-        </div><!--mainquemsoueufoto-->
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site" id="qse">
+                        <h1>Quem sou eu?<span>.</span></h1>
+                        <p>Meu nome é Natália Tavares, sou psicóloga clínica e também tenho experiência na psicologia hospitalar.
+                            Me formei em psicologia pela Universidade Veiga de Almeida, na qual tomei conhecimento da existência de um infinito de abordagens psicológicas possíveis de serem usadas clinicamente. Logo me deparei com a Análise Transacional, abordagem pela qual me apaixonei e sob a qual até hoje debruço meus estudos
+                            Durante a faculdade fiz muitos estágios, participei de projetos sociais e em saúde mental. Participei de alguns eventos sobre psicologia, e pude me aperfeiçoando, tendo cada vez mais contato com a saúde mental, que é realmente o que me encanta, ter contato com as pessoas.
+                            Estou aqui para oferecer acolhimento a quem me procura e, na garantia de um ambiente seguro, direcioná-lo (a) na busca do entendimento de si e de seus mecanismos de defesa, a fim de que consiga se tornar protagonista de sua própria vida.
+                            Vamos juntos descobrir formas mais leves de viver a vida e lidar com as emoções?</p>
+
+                        <div class="btn-contato">
+                            <a href="https://api.whatsapp.com/send?phone=5521976093091&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20sess%C3%A3o">
+                                <button>Entre em contato</button>
+                            </a>
+                        </div>
+                    </div><!--txt-topo-site-->
+
+                    <div class="img-topo-site">
+                        <img src="IMG_8830.JPG" alt="">
+                    </div><!--img-topo-site-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo-do-site-->
+
+        <section class="especiliadades">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-arrow-through-heart"></i>
+                        <h3>Ansiedade</h3>
+                        <p>Os transtornos de ansiedade são muito comuns em nossa sociedade atual, contudo, trazem graves prejuízos ao indivíduo, seja em sua vida pessoal ou profissional, provocando diversos sintomas físicos e emocionais que interferem diretamente na sua qualidade de vida.� �
+                            Metaforicamente, entendo a ansiedade como a ponta de um iceberg, ou seja,� pode ser a única parte visível de algo muito maior.� Portanto, brigar com a sua ansiedade não é o melhor caminho para solucioná-la.�
+                            Te ajudo a dialogar com a sua ansiedade, observando e cuidando de tudo que está ao seu redor, de uma forma mais leve.�</p>
+                    </div><!--especialidades-box-->
+
+                    <div class="especialidades-box">
+                        <i class="bi bi-bullseye"></i>
+                        <h3>Baixa autoestima</h3>
+                        <p>Os transtornos de ansiedade são muito comuns em nossa sociedade atual, contudo, trazem graves prejuízos ao indivíduo, seja em sua vida pessoal ou profissional, provocando diversos sintomas físicos e emocionais que interferem diretamente na sua qualidade de vida.� �
+                            Metaforicamente, entendo a ansiedade como a ponta de um iceberg, ou seja,� pode ser a única parte visível de algo muito maior.� Portanto, brigar com a sua ansiedade não é o melhor caminho para solucioná-la.�
+                            Te ajudo a dialogar com a sua ansiedade, observando e cuidando de tudo que está ao seu redor, de uma forma mais leve.�</p>
+                    </div><!--especialidades-box-->
+
+                    <div class="especialidades-box">
+                        <i class="bi bi-cloud"></i>
+                        <h3>Limites</h3>
+                        <p>Os transtornos de ansiedade são muito comuns em nossa sociedade atual, contudo, trazem graves prejuízos ao indivíduo, seja em sua vida pessoal ou profissional, provocando diversos sintomas físicos e emocionais que interferem diretamente na sua qualidade de vida.� �
+                            Metaforicamente, entendo a ansiedade como a ponta de um iceberg, ou seja,� pode ser a única parte visível de algo muito maior.� Portanto, brigar com a sua ansiedade não é o melhor caminho para solucioná-la.�
+                            Te ajudo a dialogar com a sua ansiedade, observando e cuidando de tudo que está ao seu redor, de uma forma mais leve.�</p>
+                    </div><!--especialidades-box-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--especiliadades-->
+
+
+        <div class="beneficios">
+            <div class="ben">
+                <h1 class="ben-text">
+                    Benefícios
+                </h1>
+                <h6 class="ben-txt">
+                    Dê o Primeiro passo <br>
+                    em direção ao seu <br>
+                    bem-estar.
+                </h6>
+            </div>
+            <div class="zeroum">
+                <h1 class="numero">01</h1>
+                <h2 class="txt">Regulação Emocional</h2>
+                <p>
+                    A terapia proporciona um espaço seguro para entender e gerenciar emoções. Você desenvolverá habilidades para sua autoregulação de forma a lidar com o estresse, ansiedade e outros desafios emocionais da vida cotidiana, promovendo estabilidade emocional e melhorando as relações. <br>
+                </p>
+            </div><!--zeroum-->
+            <div class="zerodois">
+                <h1 class="numero">02</h1>
+                <h2 class="txt">Resolução de problemas</h2>
+                <p>
+                    A terapia é um ambiente para analisar desafios pessoais. Você aprenderá a identificar e abordar problemas, adquirindo perspectivas valiosas e habilidades de resolução mais assertivas. Isso resulta em decisões mais informadas e soluções eficazes, resultando em uma maior sensação de controle sobre a própria vida. <br>
+                </p>
+            </div><!--zerodois-->
+            <div class="zerotres">
+                <h1 class="numero">03</h1>
+                <h2 class="txt">Autonomia e bem-estar</h2>
+                <p>
+                    No processo terapêutico você construirá uma base sólida para decisões alinhadas com seus objetivos. Essa jornada de autoexploração contribui para uma vida mais significativa e satisfatória e ao ganhar clareza sobre sua identidade e propósito, você pode cultivar uma sensação duradoura de bem-estar emocional e psicológico.
+                </p>
+            </div><!--zerotres-->
+        </div><!--beneficios-->
+
+        <!--
+        <section class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="IMG_8836.JPG" alt="">
+                    </div>img-sobre
+
+                    <div class="txt-sobre">
+                        <h2>Benefícios da<span>Psicologia.</span></h2>
+                        <p>Melhor compreensão de si mesmo: A psicologia ajuda as pessoas a entenderem melhor seus pensamentos, sentimentos, comportamentos e motivações, promovendo assim o autoconhecimento e a autoaceitação. Melhores relacionamentos: Ao compreender melhor a si mesmo, você também pode entender melhor os outros, o que leva a relacionamentos mais saudáveis e gratificantes. Saúde mental: A psicologia oferece técnicas e estratégias para lidar com o estresse, ansiedade, depressão e outros problemas de saúde mental, promovendo o bem-estar psicológico. Desenvolvimento pessoal: Através da psicologia, as pessoas podem desenvolver habilidades como assertividade, resiliência, empatia e comunicação eficaz, que são essenciais para o crescimento pessoal e profissional.</p>
+                        <p>Melhor desempenho acadêmico e profissional: A compreensão da psicologia humana pode melhorar o desempenho em diversas áreas da vida, desde o desempenho acadêmico até o sucesso no local de trabalho. Tomada de decisão mais informada: A psicologia fornece insights sobre como as pessoas pensam, sentem e tomam decisões, o que pode ajudar na tomada de decisões mais informadas e eficazes em diversas situações. Promoção da saúde física: A saúde mental está intimamente ligada à saúde física, e a psicologia pode ajudar as pessoas a adotar comportamentos saudáveis, como dieta equilibrada, exercícios regulares e sono adequado. Redução do estigma: Ao aumentar a compreensão sobre questões de saúde mental, a psicologia ajuda a reduzir o estigma associado a essas questões, promovendo assim uma sociedade mais inclusiva e compassiva.</p>
+                       
+                       
+                       
+                       
+                       <div class="btn-social">
+                            <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="#"><button><i class="bi bi-youtube"></i></button></a>
+                            <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
+                        </div>btn-social-
+                    </div>txt-sobre-
+                </div><flex--
+            </div>interface--
+        </section><-sobre-->
+<!--
+        <section class="portfolio">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(images/imagem.jpg);">
+                        <div class="overlay">Projeto 1</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(images/imagem.jpg);">
+                        <div class="overlay">Projeto 2</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(images/imagem.jpg);">
+                        <div class="overlay">Projeto 3</div>
+                    </div>
+                </div>   
+            </div><!--interface
+        </section><!--portfolio
+
+        <section class="formulario">
+            <div class="interface">
+                <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
+                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
+                    <input type="text" name="" id="" placeholder="Seu celular:">
+                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+            </div><!--interface
+        </section><!--formulario
+
     </main>
-    
 
-    <div class="fotonotelefoneminha">
-        <img src="IMG_8827.JPG" alt="">
-    </div>
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/logo.png" alt="Logotipo Agência BRN">
+                    </div><!--logo-footer
+                    <div class="btn-social">
+                        <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="#"><button><i class="bi bi-youtube"></i></button></a>
+                        <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
+                    </div><!--btn-social
+                </div>
+            </div><!--line-footer
 
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:contato@bruno.com.br">contato@bruno.com.br</a></p>
+            </div><!--line-footer
+        </div><!--interface
+    </footer>
+-->
 
-
-
-
-    <div class="observacoes">
-        <div class="um">
-            <h3>Ansiedade</h3>
-            <div class="texto">
-                <p>Os transtornos de ansiedade são muito comuns em nossa sociedade atual, contudo, trazem graves prejuízos ao indivíduo, seja em sua vida pessoal ou profissional, provocando diversos sintomas físicos e emocionais que interferem diretamente na sua qualidade de vida.� � <br>
-
-                    Metaforicamente, entendo a ansiedade como a ponta de um iceberg, ou seja,�  pode ser a única parte visível de algo muito maior.� Portanto, brigar com a sua ansiedade não é o melhor caminho para solucioná-la.� <br>
-                    
-                    Te ajudo a dialogar com a sua ansiedade, observando e cuidando de tudo que está ao seu redor, de uma forma mais leve.� <br></p>
-            </div>
-        </div><!--um-->
-
-        <div class="dois">
-            <h3>Baixa autoestima</h3>
-            <div class="texto">
-                <p>Os transtornos de ansiedade são muito comuns em nossa sociedade atual, contudo, trazem graves prejuízos ao indivíduo, seja em sua vida pessoal ou profissional, provocando diversos sintomas físicos e emocionais que interferem diretamente na sua qualidade de vida.� � <br>
-
-                    Metaforicamente, entendo a ansiedade como a ponta de um iceberg, ou seja,�  pode ser a única parte visível de algo muito maior.� Portanto, brigar com a sua ansiedade não é o melhor caminho para solucioná-la.� <br>
-                    
-                    Te ajudo a dialogar com a sua ansiedade, observando e cuidando de tudo que está ao seu redor, de uma forma mais leve.� <br></p>
-            
-            </div>
-        </div><!--dois-->
-
-        <div class="tres">
-            <h3>Limites</h3>
-            <div class="texto">
-                <p>Os transtornos de ansiedade são muito comuns em nossa sociedade atual, contudo, trazem graves prejuízos ao indivíduo, seja em sua vida pessoal ou profissional, provocando diversos sintomas físicos e emocionais que interferem diretamente na sua qualidade de vida.� � <br>
-
-                    Metaforicamente, entendo a ansiedade como a ponta de um iceberg, ou seja,�  pode ser a única parte visível de algo muito maior.� Portanto, brigar com a sua ansiedade não é o melhor caminho para solucioná-la.� <br>
-                    
-                    Te ajudo a dialogar com a sua ansiedade, observando e cuidando de tudo que está ao seu redor, de uma forma mais leve.� <br></p>
-            
-            </div>
-        </div><!--tres-->
-
-        <!--
-        <div class="quatro">
-            <h3>Maternidade</h3>
-            <div class="texto">
-                <p>Os transtornos de ansiedade são muito comuns em nossa sociedade atual, contudo, trazem graves prejuízos ao indivíduo, seja em sua vida pessoal ou profissional, provocando diversos sintomas físicos e emocionais que interferem diretamente na sua qualidade de vida.� � <br>
-
-                    Metaforicamente, entendo a ansiedade como a ponta de um iceberg, ou seja,�  pode ser a única parte visível de algo muito maior.� Portanto, brigar com a sua ansiedade não é o melhor caminho para solucioná-la.� <br>
-                    
-                    Te ajudo a dialogar com a sua ansiedade, observando e cuidando de tudo que está ao seu redor, de uma forma mais leve.� <br></p>
-            
-            </div>
-        </div>quatro--> 
-    
-    </div><!--observacoes-->
-
-    <button class="entreemcontato"><a href="https://api.whatsapp.com/send?phone=5521976093091&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20sess%C3%A3o"  class="icone"><ion-icon name="logo-whatsapp"></ion-icon>Entre em Contato</a></button>
-
-
-
-    <div class="home">
-        <div class="hometext">
-            <h1>Benefícios da Psicologia</h1>
-            <p>A psicologia oferece insights profundos sobre a mente humana, promovendo autoconhecimento, relacionamentos saudáveis e bem-estar mental.</p>
-            <p>Melhor compreensão de si mesmo: A psicologia ajuda as pessoas a entenderem melhor seus pensamentos, sentimentos, comportamentos e motivações, promovendo assim o autoconhecimento e a autoaceitação.
-
-                Melhores relacionamentos: Ao compreender melhor a si mesmo, você também pode entender melhor os outros, o que leva a relacionamentos mais saudáveis e gratificantes.
-                
-                Saúde mental: A psicologia oferece técnicas e estratégias para lidar com o estresse, ansiedade, depressão e outros problemas de saúde mental, promovendo o bem-estar psicológico.
-                
-                Desenvolvimento pessoal: Através da psicologia, as pessoas podem desenvolver habilidades como assertividade, resiliência, empatia e comunicação eficaz, que são essenciais para o crescimento pessoal e profissional.
-                
-                Melhor desempenho acadêmico e profissional: A compreensão da psicologia humana pode melhorar o desempenho em diversas áreas da vida, desde o desempenho acadêmico até o sucesso no local de trabalho.
-                
-                Tomada de decisão mais informada: A psicologia fornece insights sobre como as pessoas pensam, sentem e tomam decisões, o que pode ajudar na tomada de decisões mais informadas e eficazes em diversas situações.
-                
-                Promoção da saúde física: A saúde mental está intimamente ligada à saúde física, e a psicologia pode ajudar as pessoas a adotar comportamentos saudáveis, como dieta equilibrada, exercícios regulares e sono adequado.
-                
-                Redução do estigma: Ao aumentar a compreensão sobre questões de saúde mental, a psicologia ajuda a reduzir o estigma associado a essas questões, promovendo assim uma sociedade mais inclusiva e compassiva.</p>
-        </div><!--hometext-->
-        <div class="homeimg">
-            <img src="livros-com-cerebro-em-estilo-de-arte-digital-para-o-dia-da-educacao_23-2151164350-removebg-preview.png" alt="cerebro">
-        </div><!--homeimg-->
-    </div>
-
-    <div class="beneficios">
-        <div class="ben">
-            <h1 class="ben-text">
-                Benefícios
-            </h1>
-            <h6 class="ben-txt">
-                Dê o Primeiro passo <br>
-                em direção ao seu <br>
-                bem-estar.
-            </h6>
+    <div class="comopossoajudar" id="cpa">
+        <div class="comopossoajudar-txt">
+            <h1>Como posso <span>ajudar?</span></h1>
+            <p>Atendo demandas como: Depressão, Ansiedade, Angústia, Depedencia, Mudanças, Crise Existencial, etc. Busco estar sempre me atualizando e me dispondo a pensar o meu fazer enquanto Psicóloga. Realizo meu ofício com muito profissionalismo, ética, atenção, cuidado e respeito profundo aos meus pacientes e às suas histórias.</p>
+            <br>
+            <p>Você já se sentiu sobrecarregado pela vida? Lidar com desafios pode ser esmagador, mas você não está sozinho. Como psicólogo comprometido com o seu bem-estar mental, estou aqui para ajudar. Meu nome é Natália Tavares, e sou apaixonada por guiar indivíduos, casais e famílias na jornada em direção a uma vida mais equilibrada e gratificante. Com uma abordagem compassiva e baseada em evidências, ofereço suporte para uma variedade de questões, incluindo ansiedade, depressão, estresse, relacionamentos, trauma e muito mais. Minha prática é um espaço seguro e acolhedor, onde você pode explorar seus sentimentos, pensamentos e preocupações livre de julgamentos. Através de terapia individualizada, trabalharemos juntos para identificar suas metas e desenvolver estratégias práticas para alcançá-las. Acredito que todos têm a capacidade de superar obstáculos e encontrar significado em suas vidas. Se você está pronto para dar o primeiro passo em direção ao crescimento pessoal e ao bem-estar emocional, entre em contato comigo para agendar uma consulta. Juntos, podemos transformar desafios em oportunidades e ajudá-lo a viver uma vida mais plena e satisfatória. Não espere mais para investir em si mesmo. Entre em contato hoje e comece sua jornada em direção a uma vida mais saudável e feliz.</p>
+        </div><!--quemsoueu-txt-->
+        <div class="comopossoajudar-img">
+            <img src="IMG_8827.JPG" alt="">
         </div>
-        <div class="zeroum">
-            <h1 class="numero">01</h1>
-            <h2 class="txt">Regulação Emocional</h2>
-            <p>
-               A Terapia proporciona um espaço seguro <br>
-               para entender e gerenciar emoções. Você <br>
-               desenvolverá habilidades para sua <br>
-               autoregulação de forma a lidar com o <br>
-               estresse, ansiedade e outros desafios <br>
-               emocionais da vida cotidiana, promovendo <br>
-               estabilidade emocional e melhorando as <br>
-               relações <br>
-            </p>
-        </div><!--zeroum-->
-        <div class="zerodois">
-            <h1 class="numero">02</h1>
-            <h2 class="txt">Resolução de problemas</h2>
-            <p>
-                A Terapia é um ambiente para analisar <br>
-                desafios pessoais. Você aprenderá a <br>
-                identificar e abordar problemas, adquirindo <br>
-                perspectivas valiosas e habilidades de <br>
-                resolução mais assertivas. Isso ressulta em <br>
-                decisões mais informadas e soluções <br>
-                eficazes, resultando em uma maior sensação <br>
-                de controle sobre a própria vida. <br>
-            </p>
-        </div><!--zerodois-->
-        <div class="zerotres">
-            <h1 class="numero">03</h1>
-            <h2 class="txt">Autonomia e bem-estar</h2>
-            <p>
-                No processo terapêutico você construirá <br>
-                uma base sólida para decisões alinhadas <br>
-                com seus objetivos. Essa jornada de <br>
-                autoexploração contribui para uma vida mais <br>
-                significativa e satisfatória e ao ganhar clareza <br>
-                sobre sua identidade e propósito, você pode <br>
-                cultivar uma sensação duradoura de bem-estar <br>
-                emocional e psicológico.
-            </p>
-        </div><!--zerotres-->
-    </div><!--beneficios-->
 
-
-    
-    <div class="redes">
-        <button class="redestexto"><a href="https://www.instagram.com/nataliatavarespsi/" class="iconeinsta"><ion-icon name="logo-instagram"></ion-icon></ion-icon>Meu Instagram</a></button>
-        <!--<h1 class="redestexto"><a href="https://www.instagram.com/nataliatavarespsi/"><img src="meuinsta1.png" alt="insta"></a></h1>-->
-    </div><!--redes-->
-    <hr class="linhadois">
-
-    <div class="comoposso" id="cpa">
-        <div class="ajudar">
-            <h2>Como posso Ajudar?</h1>
-                <p>Você já se sentiu sobrecarregado pela vida? Lidar com desafios pode ser esmagador, mas você não está sozinho. Como psicólogo comprometido com o seu bem-estar mental, estou aqui para ajudar.
-
-                    Meu nome é [Seu Nome], e sou apaixonado por guiar indivíduos, casais e famílias na jornada em direção a uma vida mais equilibrada e gratificante. Com uma abordagem compassiva e baseada em evidências, ofereço suporte para uma variedade de questões, incluindo ansiedade, depressão, estresse, relacionamentos, trauma e muito mais.
-                    
-                    Minha prática é um espaço seguro e acolhedor, onde você pode explorar seus sentimentos, pensamentos e preocupações livre de julgamentos. Através de terapia individualizada, trabalharemos juntos para identificar suas metas e desenvolver estratégias práticas para alcançá-las.
-                    
-                    Acredito que todos têm a capacidade de superar obstáculos e encontrar significado em suas vidas. Se você está pronto para dar o primeiro passo em direção ao crescimento pessoal e ao bem-estar emocional, entre em contato comigo para agendar uma consulta. Juntos, podemos transformar desafios em oportunidades e ajudá-lo a viver uma vida mais plena e satisfatória.
-                    
-                    Não espere mais para investir em si mesmo. Entre em contato hoje e comece sua jornada em direção a uma vida mais saudável e feliz.</p>
-
-                    <p>Atendo demandas como: Depressão, Ansiedade, Angústia, Depedencia, Mudanças, Crise Existencial, etc. Busco estar sempre me atualizando e me dispondo a pensar o meu fazer enquanto Psicóloga. Realizo meu ofício com muito profissionalismo, ética, atenção, cuidado e respeito profundo aos meus pacientes e às suas histórias</p>
-        </div><!--ajudar-->
-
-
-        <div class="sessao" id="agd">
-            <h2>Agende Sua Sessão</h2>
-            <img src="boneca3D.png" alt="boneca">
-            <button class="agendarsessao"><a href="https://api.whatsapp.com/send?phone=5521976093091&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20sess%C3%A3o">Agendar Sessão</a></button>
-        
-
-            
-    <div class="feed">
-        <!--
-        <h1 class="feedbackstxt">FeedBacks</h1>
-        <div class="feedbacks">
-            <img src="feedback1.png" alt="feed1">
-            <img src="feedback2.png" alt="feed2">
-        </div>
-    -->
-        <button class="maisfeedbacks"><a href="https://www.google.com/search?kgmid=/g/11rw7pr9_8&hl=pt-BR&q=Psic%C3%B3loga+Nat%C3%A1lia+Tavares&kgs=da634deb66b7a483&shndl=30&shem=ssim&source=sh/x/loc/osrp/m5/3#lrd=0x997b11235e6a79:0x767e9d5680abf3a8,1,,,,">Feedbacks</a></button>
-    </div>
    
-        </div><!--sessao-->
-    </div><!--comoposso-->
+    </div><!--quemsoueu-->
+
+    <div class="botao">
+        <button class="feedbacks-btn"><a href="https://www.google.com/search?kgmid=/g/11rw7pr9_8&hl=pt-BR&q=Psic%C3%B3loga+Nat%C3%A1lia+Tavares&kgs=da634deb66b7a483&shndl=30&shem=ssim&source=sh/x/loc/osrp/m5/3#lrd=0x997b11235e6a79:0x767e9d5680abf3a8,1,,,,">Feedbacks</a></button>
+        
+        <div class="botao-icon">
+        <button class="whatsapp-btn"><a href="https://api.whatsapp.com/send?phone=5521976093091"><i class="bi bi-whatsapp"></i></a></button>
+        <button class="instagram-btn"><a href="#"><i class="bi bi-instagram"></i></a></button>
+      </div>
+    </div>
 
 
 
+    <div class="agendarsessao">
+        
+    </div>
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="script.js" defer></script>
-    <script src="foto.js" defer></script>
+
+
+    
+
 </body>
 </html>
