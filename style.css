@@ -244,6 +244,34 @@ section.especiliadades .flex {
     color: #242424;
 }
 
+/* agendaar sessao */
+.agende{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.agende-btn{
+    display: flex;
+
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #ff009d;
+    border: 0;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .2s;
+    color: white;
+}
+.agende a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
 /* ESTILO DO SOBRE */
 section.sobre {
     padding: 80px 4%;
@@ -568,6 +596,8 @@ footer .line-footer p a {
 
 
 
+
+
 @media screen and (max-width: 1020px) {
 
     /* CLASSES GERAIS */
@@ -655,5 +685,44 @@ footer .line-footer p a {
 
     footer .line-footer {
         text-align: center;
+    }
+    
+    /* Beneficios */
+
+    .beneficios{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .numero{
+        margin-left: 5%;
+    }
+    .txt{
+        margin-left: 5%;
+    }
+    .beneficios p{
+        margin: 3%;
+    }
+
+    /* como posso ajudar pag */
+
+    .comopossoajudar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .comopossoajudar-txt h1{
+        font-size: 30.5px;
+    }
+    .comopossoajudar-img img{
+        width: 380px;
+        margin: 0.5%;
+    }
+
+    .botao-icon{
+        display: flex;
+        margin-right: 20%;
     }
 }
