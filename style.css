@@ -714,15 +714,52 @@ footer .line-footer p a {
     }
     
     .comopossoajudar-txt h1{
-        font-size: 30.5px;
+        font-size: 29.5px;
     }
     .comopossoajudar-img img{
         width: 380px;
-        margin: 0.5%;
+        margin: 0.4%;
     }
 
     .botao-icon{
         display: flex;
-        margin-right: 20%;
+        margin-left: 15%;
+    }
+
+
+    /* menu mob*/
+    .mob{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        list-style: none;
+    }
+    .menu-mob{
+        text-decoration: none;
+        list-style: none;
+    }
+    .menu-mob ul{
+        display: flex;
+        gap: 8px;
+        font-size: 14px;
+        text-decoration: none;
+        list-style: none;
+    }
+    .menu-mob ul li a{
+        color: #ff009d;
+        border-bottom: 0.1px solid #242424;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    /* logo */
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15%;
+        margin-top: -10%;
     }
 }
