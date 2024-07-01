@@ -478,7 +478,7 @@ footer .line-footer p a {
     display: flex;
     gap: 0%;
     margin-left: 12%;
-    margin-top: -6.5%;
+    margin-top: -26.5%;
 }
 .botao-icon{
     display: flex;
@@ -590,7 +590,9 @@ footer .line-footer p a {
 
 
 
-
+.menu-mob{
+    display: none;
+}
 
 
 
