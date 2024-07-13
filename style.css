@@ -12,6 +12,24 @@ body {
     height: 100vh;
 }
 
+
+
+/* banner */
+
+.imagem-topo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.imagem-topo img{
+    width: 1280px;
+    height: 600px;
+}
+
+
+
+/*  */
 .logo img{
     width: 260px;
     filter: drop-shadow(0.5px 0.5px 0.5px black);
@@ -34,7 +52,7 @@ body {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #ff009d;
+    background-color: #eeb9b1;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
@@ -50,12 +68,12 @@ h2.titulo {
 }
 
 h2.titulo span {
-    color: #ff009d;
+    color: #eeb9b1;;
 }
 
 button:hover,
 form .btn-enviar input:hover {
-    box-shadow: 0px 0px 8px #ff009d;
+    box-shadow: 0px 0px 8px #f5c3bb;;
     transform: scale(1.05);
 }
 
@@ -79,7 +97,7 @@ header a {
 }
 
 header nav.menu-desktop a:hover {
-    color: #ff009d;
+    color: #eeb9b1;
     transform: scale(1.05);
 }
 
@@ -99,7 +117,7 @@ header nav.menu-desktop ul li {
 }
 
 .btn-abrir-menu i{
-    color: #ff009d;
+    color: #eeb9b1;
     font-size: 40px;
 }
 
@@ -129,7 +147,7 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile .btn-fechar i{
-    color: #ff009d;
+    color: #eeb9b1;
     font-size: 30px;
 }
 
@@ -146,7 +164,7 @@ header nav.menu-desktop ul li {
 }   
 
 .menu-mobile nav ul li a:hover{
-    background-color: #ff009d;
+    background-color: #eeb9b1;
     color: #000;
 }
 
@@ -174,13 +192,14 @@ section.topo-do-site .flex {
 
 .topo-do-site h1 {
     /* color: #fff; */
-    color: #ff009d;
+    /* color: #ff009d; */
+    color: #eeb9b1;;
     font-size: 42px;
     line-height: 40px;
 }
 
 .topo-do-site .txt-topo-site h1 span {
-    color: #ff009d;
+    color: #eeb9b1;
 }
 
 .topo-do-site .txt-topo-site p {
@@ -232,13 +251,13 @@ section.especiliadades .flex {
 
 .especiliadades .especialidades-box i {
     font-size: 70px;
-    color: #ff009d;
+    color: #eeb9b1;
 }
 
 .especiliadades .especialidades-box h3 {
     font-size: 28px;
     margin: 15px 0;
-    color: #ff009d;
+    color: #eeb9b1;
 }
 .especialidades-box p{
     color: #242424;
@@ -258,7 +277,7 @@ section.especiliadades .flex {
     padding: 12px 24px;
     font-size: 16px;
     font-weight: 600;
-    background-color: #ff009d;
+    background-color: #eeb9b1;
     border: 0;
     border-radius: 25px;
     cursor: pointer;
@@ -293,7 +312,7 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre h2 span {
-    color: #ff009d;
+    color: #eeb9b1;
     display: block;
 }
 
@@ -307,7 +326,7 @@ section.sobre .flex {
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color:#ff009d;;
+    background-color: #eeb9b1;
     font-size: 22px;
     cursor: pointer;
     margin: 0 5px;
@@ -401,7 +420,7 @@ form .btn-enviar {
 
 form .btn-enviar input {
     width: 120px;
-    background-color: #ff009d;
+    background-color: #eeb9b1;
     color: #000;
     font-weight: 700;
     cursor: pointer;
@@ -424,11 +443,11 @@ footer .line-footer {
 }
 
 .borda {
-    border-top: 2px solid #ff009d;
+    border-top: 2px solid #eeb9b1;
 }
 
 footer .line-footer p i {
-    color: #ff009d;
+    color: #eeb9b1;
     font-size: 22px;
 }
 
@@ -446,10 +465,10 @@ footer .line-footer p a {
 }
 
 .comopossoajudar-txt h1{
-    color: #ff009d;
+    color: #eeb9b1
 }
 .comopossoajudar-txt h1 span{
-    color: #ff009d;
+    color: #eeb9b1;
 }
 
 .comopossoajudar-txt p{
@@ -458,7 +477,7 @@ footer .line-footer p a {
 }
 
 .comopossoajudar-img img{
-    width: 500px;
+    width: 350px;
     filter: drop-shadow(0.5px 0.5px 2px black);
 }
 /* feedbacks */
@@ -467,7 +486,7 @@ footer .line-footer p a {
     padding: 10px 30px;
     font-size: 16px;
     font-weight: 600;
-    background-color: #ff009d;
+    background-color: #eeb9b1;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
@@ -477,8 +496,8 @@ footer .line-footer p a {
 .botao{
     display: flex;
     gap: 0%;
-    margin-left: 12%;
-    margin-top: -26.5%;
+    margin-left: 0%;
+    margin-top: 0;
 }
 .botao-icon{
     display: flex;
@@ -495,7 +514,7 @@ footer .line-footer p a {
     padding: 12px 24px;
     font-size: 16px;
     font-weight: 600;
-    background-color: #ff009d;
+    background-color: #eeb9b1;
     border: 0;
     border-radius: 25px;
     cursor: pointer;
@@ -510,7 +529,7 @@ footer .line-footer p a {
     padding: 12px 24px;
     font-size: 16px;
     font-weight: 600;
-    background-color: #ff009d;
+    background-color: #eeb9b1;
     border: 0;
     border-radius: 25px;
     cursor: pointer;
@@ -519,6 +538,52 @@ footer .line-footer p a {
 .whatsapp-btn i {
     color: white;
 }
+
+
+
+/* carrossel */
+
+.carrossel{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+.carrossel img{
+    width: 180px;
+}
+.carrossel h6{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fe88b0;
+    margin-top: -30px;
+}
+.carrossel-img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+
+@media screen and (max-width:785px){
+    .carrossel{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -541,7 +606,7 @@ footer .line-footer p a {
     font-family:'Courier New', Courier, monospace;
     font-size: 48px;
     margin-bottom: 1rem;
-    color: #ff009d;
+    color: #eeb9b1;
     margin-left: 32px;
 
 }
@@ -580,12 +645,12 @@ footer .line-footer p a {
 }
 
 .txt{
-    color: #ff009d;
+    color: #eeb9b1;
 }
 .numero{
     border-bottom: 0.5px solid #242424;
     width: 50%;
-    color: #ff009d;
+    color: #eeb9b1;
 }
 
 
