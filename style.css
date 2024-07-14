@@ -28,7 +28,6 @@ body {
 }
 
 
-
 /*  */
 .logo img{
     width: 260px;
@@ -829,4 +828,10 @@ footer .line-footer p a {
         margin-left: 15%;
         margin-top: -10%;
     }
+
+    .imagem-topo img{
+        width: 360px;
+        height: 260px;
+    }
+
 }
