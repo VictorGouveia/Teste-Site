@@ -24,6 +24,7 @@ body {
 .imagem-topo img{
     width: 1280px;
     height: 600px;
+    box-shadow: 1px 1px 5px black;
    
 }
 
