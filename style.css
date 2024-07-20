@@ -22,7 +22,7 @@ body {
     align-items: center;
 }
 .imagem-topo img{
-    width: 1280px;
+    width: 1380px;
     height: 600px;
     box-shadow: 1px 1px 5px black;
    
@@ -851,6 +851,7 @@ footer .line-footer p a {
 
     .topo-do-site .img-topo-site img {
         width: 100%;
+        margin-top: -2rem;
     }
 
     /* ESPECIALIDADES */
@@ -982,8 +983,8 @@ footer .line-footer p a {
         margin: 0;
         padding: 0;
 
-        width: 400px;
-        height: 260px;
+        width: 450px;
+        height: 276px;
     }
 
 
@@ -1008,6 +1009,12 @@ footer .line-footer p a {
 
     .carrossel{
         display: grid;
-        ;
+        grid-template-columns: 1fr 1fr;
+    }
+    .carrossel h6{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 100px;
     }
 }
