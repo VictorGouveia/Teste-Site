@@ -1008,7 +1008,7 @@ footer .line-footer p a {
         color: black;
     }
     .atendimento{
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .carrossel{
@@ -1017,7 +1017,7 @@ footer .line-footer p a {
         
     }
     .carrossel-img{
-        margin-left: 20%;
+        margin-left: 16%;
     }
     .carrossel h6{
         display: flex;
