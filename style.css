@@ -1009,6 +1009,11 @@ footer .line-footer p a {
     }
     .atendimento{
         font-size: 12px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .carrossel{
@@ -1017,7 +1022,8 @@ footer .line-footer p a {
         
     }
     .carrossel-img{
-        margin-left: 16%;
+        margin-left: 7%;
+        margin-right: 7%;
     }
     .carrossel h6{
         display: flex;
