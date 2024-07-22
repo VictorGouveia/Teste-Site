@@ -999,7 +999,8 @@ footer .line-footer p a {
         align-items: center;
         flex-direction: row;
         gap: 16px;
-        margin-right: 30px;
+        margin-right: 2.5%;
+        margin-left: 2.5%;
     }
     .redes .rede{
         font-size: 11px;
