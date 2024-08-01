@@ -22,7 +22,7 @@ body {
     align-items: center;
 }
 .imagem-topo img{
-    width: 1380px;
+    width: 1720px;
     height: 600px;
     box-shadow: 1px 1px 5px black;
    
@@ -998,13 +998,13 @@ footer .line-footer p a {
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        gap: 16px;
-        margin-right: 2.5%;
-        margin-left: 2.5%;
+        gap: 10px;
+        margin-right: 50px;
     }
     .redes .rede{
         font-size: 11px;
         color: black;
+        
     }
     .rede a{
         color: black;
