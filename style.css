@@ -17,10 +17,10 @@ body {
 /* banner */
 
 .texto-topo{
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
 }
 .texto-topo h1{
-    font-size: 48px;
+    font-size: 45px;
     color: #eeb9b1;
 }
 .texto-topo h2{
@@ -34,11 +34,12 @@ body {
 .texto-topo p{
     margin-top: 2rem;
     font-weight: 500;
-    color: #222;
+
 }
 .imagem-topo{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 5%;
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -237,7 +238,9 @@ section.topo-do-site .flex {
     /* color: #fff; */
     margin: 40px 0;
 }
-
+.txtmob{
+    display: none;
+}
 .topo-do-site .img-topo-site img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
@@ -805,6 +808,7 @@ footer .line-footer p a {
 
 .redes{
     display:inline;
+    margin-bottom: 4rem;
     
 
 }
@@ -866,13 +870,19 @@ footer .line-footer p a {
         padding: 20px 8%;
     }
 
-    .topo-do-site h1 {
+    .topo-do-site .txtdskp {
         font-size: 30px;
+        display: none;
     }
-
+    .txtmob{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
     .topo-do-site .img-topo-site img {
         width: 100%;
-        margin-top: -2rem;
+        margin-top: 1rem;
     }
 
     /* ESPECIALIDADES */
@@ -1004,7 +1014,9 @@ footer .line-footer p a {
         display: flex;
         flex-direction: column;
     }
-
+    .texto-topo{
+        margin-left: 3%;
+    }
     .imagem-topo img{
      width: 300px;
      border-radius: 18px;
@@ -1072,5 +1084,7 @@ footer .line-footer p a {
         align-items: center;
         margin-right: 30px;
     }
-
+    .texto-topo h3{
+        color: #f5c3bb;
+    }
 }
